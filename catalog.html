@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/index-logo.svg" width="160" height="65" alt="Логотип студии «Nerds»">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="customers.html">Клиенты</a></li>
+          <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="shopping-cart">Корзина</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="page-title">Магазин готовых шаблонов</h1>
+
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр шаблонов</h2>
+        <!--Здесь будет форма-->
+      </section>
+
+      <section class="sort">
+        <h3>Сортировать:</h3>
+        <ul>
+          <li>По цене</li>
+          <li>По типу</li>
+          <li>По названию</li>
+        </ul>
+      </section>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог шаблонов</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <p>
+              <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+            </p>
+            <div class="catalog-item-card">
+              <h3>
+                <a href="catalog-item.html">Sedona</a>
+              </h3>
+              <p>Информационный сайт для туристов</p>
+              <p class="catalog-item-price">
+                <a class="button" href="#">9900 руб.</a>
+              </p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <p>
+              <img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
+            </p>
+            <div class="catalog-item-card">
+              <h3>
+                <a href="catalog-item.html">Pink App</a>
+              </h3>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <p class="catalog-item-price">
+                <a class="button" href="#">9900 руб.</a>
+              </p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <p>
+              <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
+            </p>
+            <div class="catalog-item-card">
+              <h3>
+                <a href="catalog-item.html">Barbershop</a>
+              </h3>
+              <p>Сайт салона красоты.<br>Для мужчин, да.</p>
+              <p class="catalog-item-price">
+                <a class="button" href="#">9900 руб.</a>
+              </p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <p>
+              <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
+            </p>
+            <div class="catalog-item-card">
+              <h3>
+                <a href="catalog-item.html">Mishka</a>
+              </h3>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <p class="catalog-item-price">
+                <a class="button" href="#">9900 руб.</a>
+              </p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <p>
+              <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
+            </p>
+            <div class="catalog-item-card">
+              <h3>
+                <a href="catalog-item.html">A Plus</a>
+              </h3>
+              <p>Лендинг курсов повышения квалификации</p>
+              <p class="catalog-item-price">
+                <a class="button" href="#">9900 руб.</a>
+              </p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <p>
+              <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
+            </p>
+            <div class="catalog-item-card">
+              <h3>
+                <a href="catalog-item.html">Кваст</a>
+              </h3>
+              <p>Сайт производителя крафтового кваса</p>
+              <p class="catalog-item-price">
+                <a class="button" href="#">9900 руб.</a>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
+        </ul>
+
+        <section class="cart">
+          <h2 class="visually-hidden">Как проехать</h2>
+          <img src="http://placehold.it/150x100" width="1440" height="418" alt="Карта">
+          <div class="contacts">
+            <h2>Nёrds design studio</h2>
+            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7(812)275-75-75</p>
+          </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+      <ul>
+        <li><a class="social-btn" href="#">Вконтакте</a></li>
+        <li><a class="social-btn" href="#">Фейсбук</a></li>
+        <li><a class="social-btn" href="#">Инстаграм</a></li>
+      </ul>
+      <div class="social">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+
+    <section class="modal modal-login">
+      <h2>Напишите нам</h2>
+      <!--Здесь будет форма-->
+      <span class="modal-close">x</span>
+    </section>
+  </body>
+</html>
