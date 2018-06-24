@@ -17,7 +17,9 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="shopping-cart">Корзина</li>
+          <li class="shopping-cart">
+            <a href="cart-link" href="cart.html">Корзина</a>
+            </li>
         </ul>
       </nav>
     </header>
@@ -26,19 +28,64 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <!--Здесь будет форма-->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="layout-group" value="adaptive-layout" id="filter-adaptive" checked/>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="layout-group" value="fixed-layout" id="filter-fixed"/>
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="layout-group" value="rubber-layout" id="filter-rubber"/>
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-group" value="slider" id="filter-slider" checked/>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-group" value="advantages" id="filter-advantages"/>
+                  <label for="filter-advantages">Блок преимуществ</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-group" value="news" id="filter-news" checked/>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-group" value="gallery" id="filter-gallery"/>
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-group" value="cart" id="filter-cart"/>
+                  <label for="filter-cart">Корзина</label>
+                </li>
+              </ul>
+              <button type="submit" class="filter-button button">Показать</button>
+          </fieldset>
+        </form>
       </section>
 
-      <section class="sort">
+      <section class="catalog">
         <h3>Сортировать:</h3>
         <ul>
           <li>По цене</li>
           <li>По типу</li>
           <li>По названию</li>
-        </ul>
-      </section>
 
-      <section class="catalog">
+          <button class="button catalog-button catalog-button catalog-button-down" type="button">По убыванию</span>
+          <button class="button catalog-button catalog-button catalog-button-up" type="button">По возрастанию</span>
+        </ul>
+
         <h2 class="visually-hidden">Каталог шаблонов</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -137,7 +184,9 @@
 
         <section class="cart">
           <h2 class="visually-hidden">Как проехать</h2>
-          <img src="img/map.png" width="1440" height="418" alt="Карта">
+          <p>
+            <img src="img/map.png" width="1440" height="418" alt="Офис Nerds Design Studio">
+          </p>
           <div class="contacts">
             <h2>Nёrds design studio</h2>
             <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -160,8 +209,22 @@
 
     <section class="modal modal-login">
       <h2>Напишите нам</h2>
-      <!--Здесь будет форма-->
-      <span class="modal-close">x</span>
+      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="appointment-item">
+          <label for="appointment-name">Ваше имя:</label>
+          <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия"/>
+        </p>
+        <p class="appointment-item">
+          <label for="appointment-email">Ваш e-mail:</label>
+          <input id="appointment-email" type="text" name="email" value="" placeholder="email@example.com"/>
+        </p>
+        <p class="appointment-item">
+          <label for="appointment-text">Текст письма:</label>
+          <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме"/>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
