@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -29,6 +32,7 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <h3>Стоимость:</h3>
           <fieldset>
             <legend>Сетка:</legend>
             <ul>
@@ -77,96 +81,96 @@
 
       <section class="catalog">
         <h3>Сортировать:</h3>
-        <ul>
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По названию</li>
+        <ul class="catalog-filter">
+          <li class="catalog-filter-item catalog-filter-current"><a href="#">По цене</a></li>
+          <li class="catalog-filter-item"><a href="#">По типу</a></li>
+          <li class="catalog-filter-item"><a href="#">По названию</a></li>
 
-          <button class="button catalog-button catalog-button catalog-button-down" type="button">По убыванию</span>
-          <button class="button catalog-button catalog-button catalog-button-up" type="button">По возрастанию</span>
+          <li><button class="button catalog-button catalog-button-down" type="button">По убыванию</button></li>
+          <li><button class="button catalog-button catalog-button-up" type="button">По возрастанию</button></li>
         </ul>
 
         <h2 class="visually-hidden">Каталог шаблонов</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <p>
+            <p class="catalog-item-image">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
             </p>
             <div class="catalog-item-card">
               <h3>
-                <a href="catalog-item.html">Sedona</a>
+                <a class="catalog-item-title" href="catalog-item.html">Sedona</a>
               </h3>
-              <p>Информационный сайт для туристов</p>
+              <span>Информационный сайт для туристов</span>
               <p class="catalog-item-price">
                 <a class="button" href="#">9900 руб.</a>
               </p>
             </div>
           </li>
           <li class="catalog-item">
-            <p>
+            <p class="catalog-item-image">
               <img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
             </p>
             <div class="catalog-item-card">
               <h3>
-                <a href="catalog-item.html">Pink App</a>
+                <a class="catalog-item-title" href="catalog-item.html">Pink App</a>
               </h3>
-              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <span>Продуктовый лендинг приложения для iOS и Android</span>
               <p class="catalog-item-price">
                 <a class="button" href="#">9900 руб.</a>
               </p>
             </div>
           </li>
           <li class="catalog-item">
-            <p>
+            <p class="catalog-item-image">
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
             </p>
             <div class="catalog-item-card">
               <h3>
-                <a href="catalog-item.html">Barbershop</a>
+                <a class="catalog-item-title" href="catalog-item.html">Barbershop</a>
               </h3>
-              <p>Сайт салона красоты.<br>Для мужчин, да.</p>
+              <span>Сайт салона красоты.<br>Для мужчин, да.</span>
               <p class="catalog-item-price">
                 <a class="button" href="#">9900 руб.</a>
               </p>
             </div>
           </li>
           <li class="catalog-item">
-            <p>
+            <p class="catalog-item-image">
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
             </p>
             <div class="catalog-item-card">
               <h3>
-                <a href="catalog-item.html">Mishka</a>
+                <a class="catalog-item-title" href="catalog-item.html">Mishka</a>
               </h3>
-              <p>Интернет-магазин вязаных игрушек</p>
+              <span>Интернет-магазин вязаных игрушек</span>
               <p class="catalog-item-price">
                 <a class="button" href="#">9900 руб.</a>
               </p>
             </div>
           </li>
           <li class="catalog-item">
-            <p>
+            <p class="catalog-item-image">
               <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
             </p>
             <div class="catalog-item-card">
               <h3>
-                <a href="catalog-item.html">A Plus</a>
+                <a class="catalog-item-title" href="catalog-item.html">A Plus</a>
               </h3>
-              <p>Лендинг курсов повышения квалификации</p>
+              <span>Лендинг курсов повышения квалификации</span>
               <p class="catalog-item-price">
                 <a class="button" href="#">9900 руб.</a>
               </p>
             </div>
           </li>
           <li class="catalog-item">
-            <p>
+            <p class="catalog-item-image">
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
             </p>
             <div class="catalog-item-card">
               <h3>
-                <a href="catalog-item.html">Кваст</a>
+                <a class="catalog-item-title" href="catalog-item.html">Кваст</a>
               </h3>
-              <p>Сайт производителя крафтового кваса</p>
+              <span>Сайт производителя крафтового кваса</span>
               <p class="catalog-item-price">
                 <a class="button" href="#">9900 руб.</a>
               </p>
@@ -186,6 +190,7 @@
           <h2 class="visually-hidden">Как проехать</h2>
           <p>
             <img src="img/map.png" width="1440" height="418" alt="Офис Nerds Design Studio">
+            <img src="img/map-marker.png" width="231" height="190">
           </p>
           <div class="contacts">
             <h2>Nёrds design studio</h2>
@@ -196,14 +201,14 @@
     </main>
 
     <footer class="main-footer">
-      <ul>
+      <ul class="social-list">
         <li><a class="social-btn" href="#">Вконтакте</a></li>
         <li><a class="social-btn" href="#">Фейсбук</a></li>
         <li><a class="social-btn" href="#">Инстаграм</a></li>
       </ul>
       <div class="social">
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <p class="social-1"><b>Давайте дружить, это выгодно!</b></p>
+        <p class="social-2">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
 
