@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-
-  font-family: "Roboto", Arial, sans-serif;
+  min-width: 1440px;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -70,7 +70,14 @@ a {
   background-color: #e5a722;
 }
 
+.main-header {
+  background-color: #eeeeee;
+  margin-bottom: 80px;
+}
+
 .main-navigation {
+  display: flex;
+  width: 100%;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
@@ -79,9 +86,34 @@ a {
   text-transform: uppercase;
 }
 
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+  padding-top: 49px;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-navigation .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .site-navigation,
 .user-navigation {
+  margin: 0;
+  padding: 0;
+  padding-top: 75px;
   list-style: none;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-navigation a,
@@ -102,70 +134,162 @@ a {
 }
 
 .slide-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.slide-item span {
-  font-size: 40px;
+.slide-item h3 {
+  font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages {
+  margin-bottom: 124px;
+}
+
+.studio {
+  width: 660px;
+  padding-right: 140px;
+}
+
+.stats {
+  width: 360px;
 }
 
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .advantages-item {
+  width: 360px;
   text-align: left;
 }
 
 .advantages-item h3 {
   font-size: 24px;
   line-height: 30px;
-}
-
-.slide-switches {
-  list-style: none;
-}
-
-.uppercase {
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-.about-studio {
+.studio .about-studio {
   font-size: 45px;
   line-height: 45px;
+}
+
+.studio b {
+  text-transform: uppercase;
 }
 
 .studio-list {
   list-style: none;
 }
 
-.containter-table td {
+.container-table b {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.container-table h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container-table td {
+  padding-right: 22px;
+  padding-top: 35px;
   text-align: left;
   line-height: 18px;
 }
 
-.containter-table .percent {
+.container-table .percent {
   font-size: 45px;
   line-height: 10,06px;
 }
 
 .brands-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.brands-item {
+  width: 260px;
 }
 
 .contacts h2 {
   font-size: 18px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .contacts p {
   line-height: 18px;
 }
 
+.main-footer {
+  margin-top: 70px;
+  padding-top: 70px;
+  padding-right: 350px;
+  padding-bottom: 70px;
+  padding-left: 140px;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.footer-social {
+  width: 260px;
+  margin: 0;
+  margin-right: 140px;
+}
+
+.footer-discount {
+  width: 544px;
+  margin: 0;
+  margin-left: auto;
+}
+
+.footer-discount b {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.footer-discount p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .page-title {
   font-size: 55px;
+  font-weight: 500;
   line-height: 55px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 110px;
+}
+
+.inner-page .main-header {
+  margin-bottom: 63px;
+}
+
+.filters {
+  width: 260px;
 }
 
 .filter h3 {
@@ -203,6 +327,15 @@ a {
   opacity: 0.3;
 }
 
+.catalog {
+  width: 760px;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog .catalog-filter {
   font-size: 14px;
   line-height: 18px;
@@ -237,12 +370,24 @@ a {
 }
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
   list-style: none;
 }
 
 .catalog-item {
+  width: 360px;
+  margin-bottom: 36px;
+  margin-right: 40px;
   background-color: #f8f8f8;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -267,6 +412,8 @@ a {
 }
 
 .pagination-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -300,10 +447,6 @@ a {
   border: 2px solid #dbdbdb;
 }
 
-.main-footer {
-
-}
-
 .social-1 {
   font-size: 36px;
   line-height: 36px;
@@ -326,6 +469,7 @@ a {
 .modal h2 {
   font-size: 45px;
   line-height: 45px;
+  font-weight: 500;
 }
 
 .appointment-form input[type="text"] {
