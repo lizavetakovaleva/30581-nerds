@@ -226,6 +226,7 @@ input[type="radio"].visually-hidden {
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
+  vertical-align: top;
 }
 
 .slide-controls label::after {
@@ -493,28 +494,23 @@ input[type="radio"].visually-hidden {
 .modal-map {
   display: block;
   position: relative;
-  margin: 0 40px -20px 40px;
-  background-image: url("../img/map.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  margin: 0 40px 70px 40px;
 }
 
-.modal-map .modal-map-marker {
-  position: relative;
+.modal-map-marker {
+  position: absolute;
   width: 231px;
   height: 190px;
-  top: 90px;
-  left: 820px;
-  z-index: 2;
+  bottom: 34%;
+  left: 57%;
 }
 
 .modal-map .contacts {
-  position: relative;
-  margin: 0;
-  top: -142px;
-  left: 140px;
+  position: absolute;
   width: 320px;
   z-index: 5;
+  top: 53px;
+  left: 140px;
   padding-top: 36px;
   padding-bottom: 50px;
   background-color: #ffffff;
@@ -661,8 +657,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option label {
-  position: relative;
   display: block;
+  position: relative;
   cursor: pointer;
   user-select: none;
 }
@@ -795,6 +791,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
@@ -901,6 +898,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-button li {
   display: inline-block;
+  vertical-align: top;
 }
 
 .catalog-button li:first-child {
@@ -1180,6 +1178,7 @@ input[type="radio"].visually-hidden {
 
 .appointment-item label {
   display: inline-block;
+  vertical-align: top;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
